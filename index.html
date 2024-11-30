@@ -142,7 +142,7 @@
         margin: 0;
     }
 
-    /* Animation */
+    
     .count {
         animation: fadeIn 1s ease-in-out;
     }
@@ -303,6 +303,98 @@
             padding: 10px;
             margin-top: 30px;
         }
+
+        @media (max-width: 768px) {
+    header {
+        text-align: center;
+        padding: 15px;
+    }
+
+    header img {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    /* Sidebar adjustments */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+        position: static;
+    }
+
+    .sidebar a {
+        padding: 10px;
+        flex: 1 1 calc(50% - 20px);
+        margin: 5px;
+        text-align: center;
+    }
+
+    
+    main {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    .photo-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .photo-gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .student-stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .stat {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .sidebar a {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+
+    .progress-container {
+        height: 20px;
+    }
+
+    .progress-bar {
+        line-height: 20px;
+        font-size: 0.8rem;
+    }
+}
+
     </style>
 </head>
 <body>
